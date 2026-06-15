@@ -57,37 +57,3 @@ window.addEventListener("scroll", () => {
     });
 
 });
-
-// MOBILE DEVICE CHECK
-
-const isMobile =
-    /Android|iPhone|iPad|iPod|Mobile/i.test(navigator.userAgent);
-
-if (!isMobile) {
-
-    document.body.innerHTML = `
-        <div style="
-            display:flex;
-            justify-content:center;
-            align-items:center;
-            flex-direction:column;
-            height:100vh;
-            text-align:center;
-            padding:20px;
-            font-family:Arial, sans-serif;
-            background:#0f172a;
-            color:white;
-        ">
-            <h1>Mobile Device Required</h1>
-
-            <p>
-                The CDM OneServe Student Portal is designed
-                exclusively for mobile devices.
-            </p>
-
-            <p>
-                Please access this portal using your smartphone.
-            </p>
-        </div>
-    `;
-}
