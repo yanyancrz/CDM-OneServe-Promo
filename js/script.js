@@ -56,4 +56,21 @@ window.addEventListener("scroll", () => {
 
     });
 
+
+
+    document.addEventListener("DOMContentLoaded", function () {
+
+        const trigger = document.getElementById("idFlipTrigger");
+        const inner = document.getElementById("idFlipInner");
+
+        if (trigger && inner) {
+
+            trigger.addEventListener("click", function () {
+                inner.classList.toggle("flipped");
+            });
+
+        }
+
+    });
+
 });

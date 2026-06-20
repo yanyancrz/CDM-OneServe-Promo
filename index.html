@@ -78,16 +78,132 @@ content="CDM:OneServe centralizes Digital ID, Library, Clinic, Campus Gates, Att
 
             <div class="phone-mockup">
 
-                <div class="digital-id">
+                <div class="id-flip-trigger" id="idFlipTrigger">
 
-                    <h3>Student Digital ID</h3>
+                    <div class="id-flip-inner" id="idFlipInner">
 
-                    <p>2026-00001</p>
+                        <!-- FRONT -->
 
-                    <div class="qr-placeholder"></div>
+                        <div class="digital-id digital-id-front">
 
-                    <small>Secure QR Verification</small>
+                            <div class="id-header">
+                                <div class="id-header-logo">
+                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M22 10v6M2 10l10-5 10 5-10 5z" />
+                                        <path d="M6 12v5c3 3 9 3 12 0v-5" />
+                                    </svg>
+                                </div>
+                                <div class="id-header-text">
+                                    <h4>Colegio de Montalban</h4>
+                                    <small>Kasiglahan Village, Rodriguez Rizal</small>
+                                </div>
+                            </div>
 
+                            <div class="id-accent-bar"></div>
+
+                            <div class="id-type-banner">Student Identification Card</div>
+
+                            <div class="id-photo-wrap">
+                                <div class="id-photo-ring">
+                                    <div class="id-photo-inner">
+                                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                            <circle cx="12" cy="8" r="4" />
+                                            <path d="M4 21c0-4 4-6 8-6s8 2 8 6" />
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="id-active-dot"></div>
+                            </div>
+
+                            <div class="id-details">
+
+                                <div class="id-name">Juan Dela Cruz</div>
+                                <div class="id-number">2026-00001</div>
+
+                                <div class="id-divider"></div>
+
+                                <div class="id-row">
+                                    <span class="id-row-label">Program</span>
+                                    <span class="id-pill id-pill-course">BS Information Technology</span>
+                                </div>
+
+                                <div class="id-row">
+                                    <span class="id-row-label">Year Level</span>
+                                    <span class="id-row-value">4th Year</span>
+                                </div>
+
+                                <div class="id-row">
+                                    <span class="id-row-label">Status</span>
+                                    <span class="id-pill id-pill-status"><span class="dot"></span>Active</span>
+                                </div>
+
+                            </div>
+
+                            <div class="id-qr-section">
+                                <div class="qr-placeholder"></div>
+                                <div class="id-qr-text">
+                                    <small>Secure QR Verification</small>
+                                    <span>Scan to verify student identity and enrollment status.</span>
+                                </div>
+                            </div>
+
+                            <div class="id-footer-strip"></div>
+
+                        </div>
+
+                        <!-- BACK -->
+
+                        <div class="digital-id digital-id-back">
+
+                            <div class="id-back-header">
+                                <h4>Student Identification Card</h4>
+                            </div>
+
+                            <div class="id-back-body">
+
+                                <div class="id-back-row">
+                                    <span class="id-back-label">Emergency Contact</span>
+                                    <span class="id-back-value">Maria Dela Cruz — 0917 123 4567</span>
+                                </div>
+
+                                <div class="id-back-row">
+                                    <span class="id-back-label">Home Address</span>
+                                    <span class="id-back-value">Kasiglahan Village, Rodriguez, Rizal</span>
+                                </div>
+
+                                <div class="id-back-row">
+                                    <span class="id-back-label">Validity</span>
+                                    <span class="id-back-value">A.Y. 2025 – 2026</span>
+                                </div>
+
+                                <div class="id-back-row">
+                                    <span class="id-back-label">Barcode</span>
+                                    <div class="id-barcode"></div>
+                                </div>
+
+                            </div>
+
+                            <div class="id-back-signature">
+                                Authorized Signature
+                            </div>
+
+                            <div class="id-back-terms">
+                                This card is property of Colegio de Montalban. If found, please
+                                return to the Registrar's Office. Non-transferable.
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="id-flip-hint">
+                    <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8" />
+                        <path d="M3 3v5h5" />
+                    </svg>
+                    Tap card to flip
                 </div>
 
             </div>
@@ -157,27 +273,56 @@ content="CDM:OneServe centralizes Digital ID, Library, Clinic, Campus Gates, Att
         <div class="service-grid">
 
             <div class="service-card">
-                📚
-                <h3>Library Hub</h3>
-                <p>Borrowing & Access Logs</p>
+                <div class="service-icon-badge" style="background:#E1F5EE;color:#085041;">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20" />
+                        <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z" />
+                    </svg>
+                </div>
+                <h3>Library</h3>
+                <p>Access library information and services.</p>
             </div>
 
             <div class="service-card">
-                🚪
-                <h3>Campus Gates</h3>
-                <p>Secure Entry & Exit Monitoring</p>
+                <div class="service-icon-badge" style="background:#FAECE7;color:#712B13;">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M22 12h-4l-3 9L9 3l-3 9H2" />
+                    </svg>
+                </div>
+                <h3>Clinic</h3>
+                <p>View clinic services and announcements.</p>
             </div>
 
             <div class="service-card">
-                🏥
-                <h3>School Clinic</h3>
-                <p>Medical Records & Visit Logs</p>
+                <div class="service-icon-badge" style="background:#FAEEDA;color:#633806;">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <rect x="2" y="7" width="20" height="14" rx="2" />
+                        <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16" />
+                    </svg>
+                </div>
+                <h3>Business Hub</h3>
+                <p>Explore student businesses and services.</p>
             </div>
 
             <div class="service-card">
-                🎓
-                <h3>Student Services</h3>
-                <p>Events & Attendance Tracking</p>
+                <div class="service-icon-badge" style="background:#EEEDFE;color:#3C3489;">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M4 10V8a4 4 0 0 1 8 0v2" />
+                        <rect x="2" y="10" width="20" height="11" rx="2" />
+                    </svg>
+                </div>
+                <h3>Lost &amp; Found</h3>
+                <p>Report or locate lost belongings.</p>
+            </div>
+
+            <div class="service-card">
+                <div class="service-icon-badge" style="background:#FBEAF0;color:#72243E;">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21l7.78-7.55 1.06-1.06a5.5 5.5 0 0 0 0-7.78z" />
+                    </svg>
+                </div>
+                <h3>Guidance</h3>
+                <p>Guidance counseling and student support.</p>
             </div>
 
         </div>
@@ -321,6 +466,7 @@ content="CDM:OneServe centralizes Digital ID, Library, Clinic, Campus Gates, Att
 </footer>
 
 <script src="js/script.js"></script>
+<script src="js/id-flip.js"></script>
 
 </body>
 </html>
