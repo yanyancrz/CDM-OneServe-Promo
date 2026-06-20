@@ -27,6 +27,17 @@ faqItems.forEach(item => {
     });
 });
 
+// DIGITAL ID FLIP
+
+const idFlipTrigger = document.getElementById("idFlipTrigger");
+const idFlipInner = document.getElementById("idFlipInner");
+
+if (idFlipTrigger && idFlipInner) {
+    idFlipTrigger.addEventListener("click", () => {
+        idFlipInner.classList.toggle("flipped");
+    });
+}
+
 // ACTIVE NAVIGATION LINKS
 
 const sections = document.querySelectorAll("section");
@@ -52,23 +63,6 @@ window.addEventListener("scroll", () => {
 
         if (link.getAttribute("href").includes(current)) {
             link.classList.add("active");
-        }
-
-    });
-
-
-
-    document.addEventListener("DOMContentLoaded", function () {
-
-        const trigger = document.getElementById("idFlipTrigger");
-        const inner = document.getElementById("idFlipInner");
-
-        if (trigger && inner) {
-
-            trigger.addEventListener("click", function () {
-                inner.classList.toggle("flipped");
-            });
-
         }
 
     });
