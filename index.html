@@ -4,460 +4,853 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>CDM:OneServe | Integrated Campus Service Management Platform</title>
+<title>CDM OneServe — Integrated Campus Service Management System | Colegio de Montalban</title>
 
-<meta name="description"
-content="CDM:OneServe centralizes Digital ID, Library, Clinic, Campus Gates, Attendance Tracking, and Student Services into one seamless platform.">
+<meta name="description" content="CDM OneServe is the integrated campus service management system of Colegio de Montalban. Discover campus services such as Lost & Found, Library, Clinic, and Guidance, and learn how to install the app on Android, iPhone, and desktop.">
+<meta name="author" content="Colegio de Montalban">
+<meta name="theme-color" content="#106A2E">
 
-<link rel="icon" href="assets/images/favicon.ico" type="image/png"> 
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="CDM OneServe">
+<meta property="og:title" content="CDM OneServe — One Campus. One Platform.">
+<meta property="og:description" content="Access campus services through one integrated platform. Explore Lost & Found, Library, Clinic, and Guidance, and install CDM OneServe on your device.">
+<meta property="og:image" content="assets/images/og-image.png">
+<meta property="og:url" content="">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
+<link rel="apple-touch-icon" href="assets/images/og-image.png">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet">
+
 <link rel="stylesheet" href="css/style.css">
-</head>
 
+<noscript>
+<style>
+  [data-animate],[data-reveal]{ opacity:1 !important; transform:none !important; }
+  .faq-answer{ max-height:none !important; }
+</style>
+</noscript>
+</head>
 <body>
 
-<header class="header">
-    <nav class="navbar container">
+<a class="skip-link" href="#hero">Skip to main content</a>
 
-        <a href="#" class="logo">
-    <img src="assets/images/cdm-oneserve-logo.png"
-         alt="CDM OneServe Logo">
-</a>
+<!-- ===================== NAVIGATION ===================== -->
+<header class="header" id="header">
+    <nav class="navbar container" aria-label="Primary navigation">
+
+        <a href="#hero" class="logo" aria-label="CDM OneServe — Home">
+            <img src="assets/images/cdm-oneserve-logo.png" alt="CDM OneServe logo" width="176" height="66">
+        </a>
 
         <ul class="nav-links" id="navLinks">
-            <li><a href="#features">Features</a></li>
-            <li><a href="#services">Services</a></li>
+            <li><a href="#hero">Home</a></li>
             <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#how-it-works">How It Works</a></li>
+            <li><a href="#install">Installation Guide</a></li>
             <li><a href="#faq">FAQ</a></li>
+            <li class="nav-cta-mobile"><a href="#" data-open-app target="_blank" rel="noopener">Open OneServe</a></li>
         </ul>
 
-                <button class="menu-toggle" id="menuToggle">
-                    ☰
-                </button>
+        <div class="nav-actions">
+            <a href="#" class="btn btn-primary btn-sm" data-open-app target="_blank" rel="noopener">
+                Open OneServe
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7"/><path d="M7 7h10v10"/></svg>
+            </a>
+            <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="navLinks">
+                <span class="menu-bar"></span>
+                <span class="menu-bar"></span>
+                <span class="menu-bar"></span>
+            </button>
+        </div>
 
     </nav>
 </header>
 
-<!-- HERO -->
+<main>
 
-<section class="hero">
+<!-- ===================== HERO ===================== -->
+<section class="hero" id="hero">
+    <div class="hero-bg" aria-hidden="true">
+        <span class="shape shape-1"></span>
+        <span class="shape shape-2"></span>
+        <span class="shape shape-3"></span>
+    </div>
+
     <div class="container hero-grid">
-
         <div class="hero-content">
-
-            <span class="hero-tag">
-                Smart Campus Ecosystem
-            </span>
-
-            <h1>
-                One Campus. One Identity.
-                Endless Possibilities.
+            <span class="hero-tag" data-animate="fade-up">Introducing CDM OneServe</span>
+            <h1 data-animate="fade-up" data-delay="1">
+                One Campus.<br>One Platform.
             </h1>
-
-            <p>
-                CDM:OneServe integrates a secure Digital ID with
-                essential campus ecosystems including library,
-                clinic, attendance monitoring, campus access,
-                and student services.
+            <p class="hero-sub" data-animate="fade-up" data-delay="2">
+                Access campus services with a simpler, more connected experience through CDM OneServe.
             </p>
-
-            <div class="hero-buttons">
-
-                <a href="https://student.cdmconnect.online/" class="btn btn-primary">
-                    Open Portal
-                </a>
-
+            <p class="hero-desc" data-animate="fade-up" data-delay="3">
+                Discover a more convenient way to access campus services, explore available resources, and
+                stay connected with Colegio de Montalban through one integrated platform.
+            </p>
+            <div class="hero-buttons" data-animate="fade-up" data-delay="4">
+                <a href="#services" class="btn btn-primary">Explore Services</a>
+                <a href="#install" class="btn btn-outline">How to Install</a>
             </div>
 
+            <ul class="hero-meta" data-animate="fade-up" data-delay="5">
+                <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg> Install the app on your phone</li>
+                <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg> One account for campus services</li>
+            </ul>
         </div>
 
-        <div class="hero-visual">
-
-            <div class="phone-mockup">
-
-                <div class="id-flip-trigger" id="idFlipTrigger">
-
-                    <div class="id-flip-inner" id="idFlipInner">
-
-                        <!-- FRONT -->
-
-                        <div class="digital-id digital-id-front">
-
-                            <div class="id-header">
-                                <div class="id-header-logo">
-                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                        <path d="M22 10v6M2 10l10-5 10 5-10 5z" />
-                                        <path d="M6 12v5c3 3 9 3 12 0v-5" />
-                                    </svg>
-                                </div>
-                                <div class="id-header-text">
-                                    <h4>Colegio de Montalban</h4>
-                                    <small>Kasiglahan Village, Rodriguez Rizal</small>
-                                </div>
-                            </div>
-
-                            <div class="id-accent-bar"></div>
-
-                            <div class="id-type-banner">Student Identification Card</div>
-
-                            <div class="id-photo-wrap">
-                                <div class="id-photo-ring">
-                                    <div class="id-photo-inner">
-                                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                            <circle cx="12" cy="8" r="4" />
-                                            <path d="M4 21c0-4 4-6 8-6s8 2 8 6" />
-                                        </svg>
-                                    </div>
-                                </div>
-                                <div class="id-active-dot"></div>
-                            </div>
-
-                            <div class="id-details">
-
-                                <div class="id-name">Juan Dela Cruz</div>
-                                <div class="id-number">2026-00001</div>
-
-                                <div class="id-divider"></div>
-
-                                <div class="id-row">
-                                    <span class="id-row-label">Program</span>
-                                    <span class="id-pill id-pill-course">BS Information Technology</span>
-                                </div>
-
-                                <div class="id-row">
-                                    <span class="id-row-label">Year Level</span>
-                                    <span class="id-row-value">4th Year</span>
-                                </div>
-
-                                <div class="id-row">
-                                    <span class="id-row-label">Status</span>
-                                    <span class="id-pill id-pill-status"><span class="dot"></span>Active</span>
-                                </div>
-
-                            </div>
-
-                            <div class="id-qr-section">
-                                <div class="qr-placeholder"></div>
-                                <div class="id-qr-text">
-                                    <small>Secure QR Verification</small>
-                                    <span>Scan to verify student identity and enrollment status.</span>
-                                </div>
-                            </div>
-
-                            <div class="id-footer-strip"></div>
-
+        <div class="hero-visual" data-animate="fade-up" data-delay="2">
+            <!-- Phone mockup -->
+            <div class="mock-phone float-1">
+                <div class="mock-phone-frame">
+                    <div class="mock-phone-notch"></div>
+                    <div class="mock-screen">
+                        <div class="app-topbar">
+                            <span class="app-brand">CDM OneServe</span>
+                            <span class="app-avatar"></span>
                         </div>
-
-                        <!-- BACK -->
-
-                        <div class="digital-id digital-id-back">
-
-                            <div class="id-back-header">
-                                <h4>Student Identification Card</h4>
-                            </div>
-
-                            <div class="id-back-body">
-
-                                <div class="id-back-row">
-                                    <span class="id-back-label">Emergency Contact</span>
-                                    <span class="id-back-value">Maria Dela Cruz — 0917 123 4567</span>
-                                </div>
-
-                                <div class="id-back-row">
-                                    <span class="id-back-label">Home Address</span>
-                                    <span class="id-back-value">Kasiglahan Village, Rodriguez, Rizal</span>
-                                </div>
-
-                                <div class="id-back-row">
-                                    <span class="id-back-label">Validity</span>
-                                    <span class="id-back-value">A.Y. 2025 – 2026</span>
-                                </div>
-
-                                <div class="id-back-row">
-                                    <span class="id-back-label">Barcode</span>
-                                    <div class="id-barcode"></div>
-                                </div>
-
-                            </div>
-
-                            <div class="id-back-signature">
-                                Authorized Signature
-                            </div>
-                            
+                        <div class="app-hello">
+                            <strong>Hello, Juan</strong>
+                            <span>Welcome back to campus services</span>
                         </div>
-
+                        <div class="app-summary">
+                            <div class="app-summary-top">
+                                <span>Active Services</span>
+                                <span class="app-summary-badge">Live</span>
+                            </div>
+                            <div class="app-summary-value">04</div>
+                            <div class="app-spark">
+                                <span style="height:40%"></span><span style="height:70%"></span><span style="height:52%"></span><span style="height:88%"></span><span style="height:64%"></span><span style="height:96%"></span><span style="height:74%"></span>
+                            </div>
+                        </div>
+                        <div class="app-grid">
+                            <div class="app-tile app-tile-green">
+                                <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+                            </div>
+                            <div class="app-tile">
+                                <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
+                            </div>
+                            <div class="app-tile">
+                                <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+                            </div>
+                            <div class="app-tile">
+                                <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21l7.78-7.55 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+                            </div>
+                        </div>
+                        <div class="app-list">
+                            <div class="app-list-row"><span class="app-list-ico g"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg></span><span class="app-list-bar w70"></span></div>
+                            <div class="app-list-row"><span class="app-list-ico y"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg></span><span class="app-list-bar w55"></span></div>
+                        </div>
+                        <div class="app-nav">
+                            <span class="app-nav-dot active"></span>
+                            <span class="app-nav-dot"></span>
+                            <span class="app-nav-dot"></span>
+                        </div>
                     </div>
-
                 </div>
-
-                <div class="id-flip-hint">
-                    <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                        <path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8" />
-                        <path d="M3 3v5h5" />
-                    </svg>
-                    Tap card to flip
-                </div>
-
             </div>
 
-        </div>
+            <!-- Desktop mockup -->
+            <div class="mock-desktop float-2">
+                <div class="mock-desktop-frame">
+                    <div class="mock-desktop-bar">
+                        <span class="d"></span><span class="d"></span><span class="d"></span>
+                        <span class="mock-url">portal.cdmconnect.online
+</span>
+                        <span class="mock-installed"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> Installed</span>
+                    </div>
+                    <div class="mock-dash">
+                        <aside class="mock-dash-side" aria-hidden="true">
+                            <span class="mock-side-logo"></span>
+                            <span class="mock-side-item active"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><rect width="7" height="7" x="3" y="3" rx="1"/><rect width="7" height="7" x="14" y="3" rx="1"/><rect width="7" height="7" x="3" y="14" rx="1"/></svg></span>
+                            <span class="mock-side-item"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg></span>
+                            <span class="mock-side-item"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg></span>
+                            <span class="mock-side-item"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg></span>
+                            <span class="mock-side-item"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 4-6 8-6s8 2 8 6"/></svg></span>
+                        </aside>
+                        <div class="mock-dash-body">
+                            <div class="mock-dash-head">
+                                <span class="mock-dash-title">Overview</span>
+                                <span class="mock-search"><svg width="9" height="9" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg></span>
+                            </div>
+                            <div class="mock-stats">
+                                <div class="mock-stat">
+                                    <span class="mock-stat-label">Lost &amp; Found</span>
+                                    <span class="mock-stat-value">128</span>
+                                    <span class="mock-delta up">+12%</span>
+                                </div>
+                                <div class="mock-stat">
+                                    <span class="mock-stat-label">Library Visits</span>
+                                    <span class="mock-stat-value">1,204</span>
+                                    <span class="mock-delta up">+8%</span>
+                                </div>
+                                <div class="mock-stat">
+                                    <span class="mock-stat-label">Clinic Visits</span>
+                                    <span class="mock-stat-value">86</span>
+                                    <span class="mock-delta flat">0%</span>
+                                </div>
+                            </div>
+                            <div class="mock-chart" aria-hidden="true">
+                                <span style="height:40%"></span><span style="height:62%"></span><span style="height:50%"></span><span style="height:78%"></span><span style="height:55%"></span><span style="height:92%"></span><span style="height:66%"></span><span style="height:84%"></span>
+                            </div>
+                            <div class="mock-activity">
+                                <span class="mock-activity-title">Recent activity</span>
+                                <div class="mock-act-row"><span class="mock-act-ico g"></span><span class="mock-act-bars"><span class="mock-line w70 sm"></span><span class="mock-line w40 sm"></span></span><span class="mock-act-time"></span></div>
+                                <div class="mock-act-row"><span class="mock-act-ico y"></span><span class="mock-act-bars"><span class="mock-line w55 sm"></span><span class="mock-line w30 sm"></span></span><span class="mock-act-time"></span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
+            <!-- Floating service chips -->
+            <span class="float-card fc-1" aria-hidden="true">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
+                Library
+            </span>
+            <span class="float-card fc-2" aria-hidden="true">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+                Clinic
+            </span>
+        </div>
     </div>
 </section>
 
-<!-- FEATURES -->
-
-<section id="features" class="section">
-    <div class="container">
-
-        <div class="section-header">
-            <h2>Core Features</h2>
-            <p>
-                Built to simplify and modernize
-                campus service interactions.
+<!-- ===================== ABOUT ===================== -->
+<section id="about" class="section about">
+    <div class="container about-grid">
+        <div class="about-text" data-reveal>
+            <span class="eyebrow">About the platform</span>
+            <h2>Campus Services, Connected.</h2>
+            <p class="lead">
+                CDM OneServe is designed to bring campus services into a more accessible and organized
+                digital experience. It provides a central platform where students and faculty can discover
+                and access supported campus services without having to navigate disconnected entry points.
             </p>
+
+            <h3 class="objectives-title">Our objectives</h3>
+            <ul class="objectives">
+                <li data-reveal data-delay="1">
+                    <span class="obj-ico"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span>
+                    Make campus services easier to access
+                </li>
+                <li data-reveal data-delay="2">
+                    <span class="obj-ico"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span>
+                    Improve information accessibility
+                </li>
+                <li data-reveal data-delay="3">
+                    <span class="obj-ico"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span>
+                    Support more organized service processes
+                </li>
+                <li data-reveal data-delay="4">
+                    <span class="obj-ico"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span>
+                    Provide a convenient digital experience
+                </li>
+                <li data-reveal data-delay="5">
+                    <span class="obj-ico"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span>
+                    Connect users with available campus resources
+                </li>
+            </ul>
         </div>
 
-        <div class="feature-grid">
-
-            <article class="card">
-                <h3>Unified Digital ID</h3>
-                <p>
-                    Secure student authentication
-                    using dynamic QR technology.
-                </p>
-            </article>
-
-            <article class="card">
-                <h3>Seamless Integration</h3>
-                <p>
-                    One profile connecting multiple
-                    independent school systems.
-                </p>
-            </article>
-
-            <article class="card">
-                <h3>Real-Time Tracking</h3>
-                <p>
-                    Instant monitoring of logs,
-                    attendance, and service records.
-                </p>
-            </article>
-
+        <div class="about-visual" data-reveal>
+            <div class="about-card-stack">
+                <div class="about-card about-card-main">
+                    <div class="about-card-head">
+                        <span class="about-card-logo"></span>
+                        <div>
+                            <strong>Campus Services</strong>
+                            <small>Everything in one place</small>
+                        </div>
+                    </div>
+                    <div class="about-rows">
+                        <div class="about-row"><span class="about-dot g"></span><span class="about-bar w70"></span></div>
+                        <div class="about-row"><span class="about-dot y"></span><span class="about-bar w85"></span></div>
+                        <div class="about-row"><span class="about-dot g"></span><span class="about-bar w60"></span></div>
+                    </div>
+                </div>
+                <div class="about-card about-card-float a">
+                    <span class="about-badge-ico g"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg></span>
+                    <div><strong>Library</strong><small>Resources &amp; more</small></div>
+                </div>
+                <div class="about-card about-card-float b">
+                    <span class="about-badge-ico r"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg></span>
+                    <div><strong>Clinic</strong><small>Health services</small></div>
+                </div>
+                <div class="about-glow" aria-hidden="true"></div>
+            </div>
         </div>
-
     </div>
 </section>
 
-<!-- SERVICES -->
-
+<!-- ===================== SERVICES ===================== -->
 <section id="services" class="section section-light">
     <div class="container">
-
-        <div class="section-header">
-            <h2>Campus Services Ecosystem</h2>
-            <p>
-                Your Digital ID serves as a gateway
-                to connected school services.
-            </p>
+        <div class="section-header" data-reveal>
+            <span class="eyebrow">Campus services</span>
+            <h2>Explore Campus Services</h2>
+            <p>Discover the services available through CDM OneServe.</p>
         </div>
 
         <div class="service-grid">
-
-            <div class="service-card">
-                <div class="service-icon-badge" style="background:#E1F5EE;color:#085041;">
-                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                        <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20" />
-                        <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z" />
-                    </svg>
-                </div>
-                <h3>Library</h3>
-                <p>Access library information and services.</p>
-            </div>
-
-            <div class="service-card">
-                <div class="service-icon-badge" style="background:#FAECE7;color:#712B13;">
-                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                        <path d="M22 12h-4l-3 9L9 3l-3 9H2" />
-                    </svg>
-                </div>
-                <h3>Clinic</h3>
-                <p>View clinic services and announcements.</p>
-            </div>
-
-            <div class="service-card">
-                <div class="service-icon-badge" style="background:#FAEEDA;color:#633806;">
-                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                        <rect x="2" y="7" width="20" height="14" rx="2" />
-                        <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16" />
-                    </svg>
-                </div>
-                <h3>Business Hub</h3>
-                <p>Explore student businesses and services.</p>
-            </div>
-
-            <div class="service-card">
-                <div class="service-icon-badge" style="background:#EEEDFE;color:#3C3489;">
-                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                        <path d="M4 10V8a4 4 0 0 1 8 0v2" />
-                        <rect x="2" y="10" width="20" height="11" rx="2" />
-                    </svg>
-                </div>
+            <!-- Lost & Found -->
+            <article class="service-card" data-reveal data-delay="1">
+                <span class="service-icon">
+                    <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/><path d="M11 8v6"/><path d="M8 11h6"/></svg>
+                </span>
                 <h3>Lost &amp; Found</h3>
-                <p>Report or locate lost belongings.</p>
-            </div>
+                <p>Report lost belongings, browse found items, and follow supported recovery or claiming processes.</p>
+                <a class="service-link" href="#" data-open-app data-service="lost-and-found" target="_blank" rel="noopener">
+                    Learn More
+                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+                </a>
+            </article>
 
-            <div class="service-card">
-                <div class="service-icon-badge" style="background:#FBEAF0;color:#72243E;">
-                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                        <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21l7.78-7.55 1.06-1.06a5.5 5.5 0 0 0 0-7.78z" />
-                    </svg>
-                </div>
+            <!-- Library -->
+            <article class="service-card" data-reveal data-delay="2">
+                <span class="service-icon">
+                    <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
+                </span>
+                <h3>Library</h3>
+                <p>Explore library resources and access available digital library features.</p>
+                <a class="service-link" href="#" data-open-app data-service="library" target="_blank" rel="noopener">
+                    Learn More
+                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+                </a>
+            </article>
+
+            <!-- Clinic -->
+            <article class="service-card" data-reveal data-delay="3">
+                <span class="service-icon">
+                    <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+                </span>
+                <h3>Clinic</h3>
+                <p>Discover clinic information and access supported health-service workflows.</p>
+                <a class="service-link" href="#" data-open-app data-service="clinic" target="_blank" rel="noopener">
+                    Learn More
+                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+                </a>
+            </article>
+
+            <!-- Guidance -->
+            <article class="service-card" data-reveal data-delay="4">
+                <span class="service-icon">
+                    <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/><path d="M12 5 9.04 8.96a2.17 2.17 0 0 0 0 3.08c.82.82 2.13.85 2.99.03L12 12"/></svg>
+                </span>
                 <h3>Guidance</h3>
-                <p>Guidance counseling and student support.</p>
-            </div>
+                <p>Find guidance-related information and access supported counseling services.</p>
+                <a class="service-link" href="#" data-open-app data-service="guidance" target="_blank" rel="noopener">
+                    Learn More
+                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+                </a>
+            </article>
 
+            <!-- Marketplace -->
+            <article class="service-card" data-reveal data-delay="5">
+                <span class="service-icon">
+                    <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9 4.5 4.5A2 2 0 0 1 6.4 3h11.2a2 2 0 0 1 1.9 1.5L21 9"/><path d="M3 9h18"/><path d="M5 9v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V9"/><path d="M9 13a3 3 0 0 0 6 0"/></svg>
+                </span>
+                <h3>Marketplace</h3>
+                <p>Discover student businesses, products, and offerings through the campus marketplace.</p>
+                <a class="service-link" href="#" data-open-app data-service="marketplace" target="_blank" rel="noopener">
+                    Learn More
+                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+                </a>
+            </article>
         </div>
 
+        <p class="services-note" data-reveal>
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4"/><path d="M12 8h.01"/></svg>
+            Service availability and features are managed within OneServe. Select a service to open it in the platform.
+        </p>
     </div>
 </section>
 
-<!-- HOW IT WORKS -->
-
-<section id="about" class="section">
+<!-- ===================== HOW IT WORKS ===================== -->
+<section id="how-it-works" class="section">
     <div class="container">
-
-        <div class="section-header">
-            <h2>How It Works</h2>
+        <div class="section-header" data-reveal>
+            <span class="eyebrow">How it works</span>
+            <h2>Getting Started Is Simple</h2>
+            <p>Three simple steps to start using CDM OneServe.</p>
         </div>
 
         <div class="steps">
+            <div class="steps-connector" aria-hidden="true"><span class="steps-connector-fill"></span></div>
 
-            <div class="step">
-                <span>01</span>
-                <h3>Activate</h3>
-                <p>
-                    Generate your profile using
-                    student credentials.
-                </p>
-            </div>
+            <article class="step" data-reveal data-delay="1">
+                <span class="step-num">1</span>
+                <div class="step-body">
+                    <h3>Install OneServe</h3>
+                    <p>Open the official OneServe link on your phone and install the app to your device.</p>
+                </div>
+            </article>
 
-            <div class="step">
-                <span>02</span>
-                <h3>Link</h3>
-                <p>
-                    Sync your Digital ID with
-                    campus management systems.
-                </p>
-            </div>
+            <article class="step" data-reveal data-delay="2">
+                <span class="step-num">2</span>
+                <div class="step-body">
+                    <h3>Sign In</h3>
+                    <p>Use your existing OneServe account to access the services available to your account.</p>
+                </div>
+            </article>
 
-            <div class="step">
-                <span>03</span>
-                <h3>Scan & Go</h3>
-                <p>
-                    Access integrated services
-                    instantly through QR scanning.
-                </p>
-            </div>
-
+            <article class="step" data-reveal data-delay="3">
+                <span class="step-num">3</span>
+                <div class="step-body">
+                    <h3>Explore Services</h3>
+                    <p>Choose an available campus service and follow its supported workflow.</p>
+                </div>
+            </article>
         </div>
-
     </div>
 </section>
 
-<!-- FAQ -->
+<!-- ===================== INSTALLATION GUIDE ===================== -->
+<section id="install" class="section section-light install">
+    <div class="container">
+        <div class="section-header" data-reveal>
+            <span class="eyebrow">Installation guide</span>
+            <h2>Take OneServe With You</h2>
+            <p>OneServe is used on your phone — install the app to your home screen to get started. Administrators use the administrative interface on a desktop or laptop.</p>
+        </div>
 
+        <div class="install-shell" data-reveal>
+            <!-- Tabs -->
+            <div class="tabs" role="tablist" aria-label="Installation platform">
+                <button class="tab-btn active" role="tab" id="tab-android" aria-controls="panel-android" aria-selected="true" data-tab="android">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><rect width="14" height="20" x="5" y="2" rx="2"/><path d="M12 18h.01"/></svg>
+                    Android <span class="tab-tag">Users</span>
+                </button>
+                <button class="tab-btn" role="tab" id="tab-ios" aria-controls="panel-ios" aria-selected="false" data-tab="ios">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><rect width="12" height="20" x="6" y="2" rx="2"/><path d="M17 5.5a3 3 0 0 1-4 0"/></svg>
+                    iPhone / iPad <span class="tab-tag">Users</span>
+                </button>
+                <button class="tab-btn" role="tab" id="tab-desktop" aria-controls="panel-desktop" aria-selected="false" data-tab="desktop">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="14" x="2" y="3" rx="2"/><path d="M8 21h8"/><path d="M12 17v4"/></svg>
+                    Desktop / Laptop <span class="tab-tag">Admin</span>
+                </button>
+            </div>
+
+            <!-- Android panel -->
+            <div class="tab-panel active" id="panel-android" role="tabpanel" aria-labelledby="tab-android">
+                <div class="install-grid">
+                    <div class="install-steps">
+                        <h3>Install on Android</h3>
+                        <ol class="step-list">
+                            <li><span class="li-num">1</span><span>Open the official CDM OneServe application link using <strong>Google Chrome</strong>.</span></li>
+                            <li><span class="li-num">2</span><span>Wait for the application to load completely.</span></li>
+                            <li><span class="li-num">3</span><span>If an <strong>Install App</strong> or <strong>Add to Home Screen</strong> prompt appears, tap it.</span></li>
+                            <li><span class="li-num">4</span><span>If no prompt appears, open Chrome's three-dot menu and look for <strong>Install app</strong> or <strong>Add to Home screen</strong>.</span></li>
+                            <li><span class="li-num">5</span><span>Confirm the installation and wait for it to finish.</span></li>
+                            <li><span class="li-num">6</span><span>Find the OneServe icon on your home screen or app list and open it.</span></li>
+                        </ol>
+                        <a href="#" class="btn btn-primary" data-open-app target="_blank" rel="noopener">
+                            Open OneServe
+                            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7"/><path d="M7 7h10v10"/></svg>
+                        </a>
+                        <p class="install-note">
+                            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 9v4"/><path d="M12 17h.01"/><path d="M10.3 3.86 1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.7 3.86a2 2 0 0 0-3.4 0Z"/></svg>
+                            Menu labels may vary by Android device, browser version, and PWA configuration. Not every Android browser supports identical installation steps.
+                        </p>
+                    </div>
+                    <div class="install-visual">
+                        <div class="mock-phone small float-1">
+                            <div class="mock-phone-frame">
+                                <div class="mock-phone-notch"></div>
+                                <div class="mock-screen chrome-menu">
+                                    <div class="chrome-url">portal.cdmconnect.online</div>
+                                    <div class="menu-sheet">
+                                        <div class="menu-item highlight">
+                                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12"/><path d="m7 10 5 5 5-5"/><path d="M3 21h18"/></svg>
+                                            Install app
+                                        </div>
+                                        <div class="menu-item"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="14" height="20" x="5" y="2" rx="2"/><path d="M12 18h.01"/></svg> Add to Home screen</div>
+                                        <div class="menu-item muted"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg> Desktop site</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- iOS panel -->
+            <div class="tab-panel" id="panel-ios" role="tabpanel" aria-labelledby="tab-ios" hidden>
+                <div class="install-grid">
+                    <div class="install-steps">
+                        <h3>Install on iPhone / iPad</h3>
+                        <ol class="step-list">
+                            <li><span class="li-num">1</span><span>Open the official OneServe application link in <strong>Safari</strong>.</span></li>
+                            <li><span class="li-num">2</span><span>Tap the <strong>Share</strong> button.</span></li>
+                            <li><span class="li-num">3</span><span>Scroll through the available actions and choose <strong>Add to Home Screen</strong>.</span></li>
+                            <li><span class="li-num">4</span><span>Review the application name and tap <strong>Add</strong>.</span></li>
+                            <li><span class="li-num">5</span><span>Open OneServe using the new Home Screen icon.</span></li>
+                        </ol>
+                        <a href="#" class="btn btn-primary" data-open-app target="_blank" rel="noopener">
+                            Open OneServe
+                            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7"/><path d="M7 7h10v10"/></svg>
+                        </a>
+                        <p class="install-note">
+                            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 9v4"/><path d="M12 17h.01"/><path d="M10.3 3.86 1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.7 3.86a2 2 0 0 0-3.4 0Z"/></svg>
+                            Installation options depend on the device and browser. On iOS, install through Safari only — do not download an APK.
+                        </p>
+                    </div>
+                    <div class="install-visual">
+                        <div class="mock-phone small float-1">
+                            <div class="mock-phone-frame">
+                                <div class="mock-phone-notch"></div>
+                                <div class="mock-screen share-menu">
+                                    <div class="chrome-url">portal.cdmconnect.online</div>
+                                    <div class="share-sheet">
+                                        <span class="share-title">Share</span>
+                                        <div class="share-row">
+                                            <span class="share-ico g"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8"/><path d="M16 6l-4-4-4 4"/><path d="M12 2v14"/></svg></span>
+                                            <span class="share-ico y"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12"/><path d="m7 10 5 5 5-5"/><path d="M3 21h18"/></svg></span>
+                                            <span class="share-ico r"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="14" height="20" x="5" y="2" rx="2"/><path d="M12 18h.01"/></svg></span>
+                                        </div>
+                                        <div class="share-actions">
+                                            <div class="menu-item highlight">
+                                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12"/><path d="m7 10 5 5 5-5"/><path d="M3 21h18"/></svg>
+                                                Add to Home Screen
+                                            </div>
+                                            <div class="menu-item muted"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5" transform="translate(2,0)"/><path d="M4 4h16v16H4z"/></svg> Add to Reading List</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Desktop panel -->
+            <div class="tab-panel" id="panel-desktop" role="tabpanel" aria-labelledby="tab-desktop" hidden>
+                <div class="install-grid">
+                    <div class="install-steps">
+                        <h3>Administrative Access on Desktop</h3>
+                        <p class="panel-lead">The OneServe administrative system is used on a desktop or laptop. Students and faculty use OneServe on their phone — see the Android or iPhone tabs.</p>
+                        <ol class="step-list">
+                            <li><span class="li-num">1</span><span>Open the OneServe administrative entry using a <strong>desktop or laptop</strong> and a supported browser.</span></li>
+                            <li><span class="li-num">2</span><span>Sign in with your <strong>authorized administrator account</strong>.</span></li>
+                            <li><span class="li-num">3</span><span>Optionally, use the browser's <strong>Install app</strong> option (address-bar icon or browser menu) to add it as a desktop shortcut.</span></li>
+                            <li><span class="li-num">4</span><span>Launch it from the browser, desktop, or Start menu, depending on your operating system and browser.</span></li>
+                        </ol>
+                        <a href="#" class="btn btn-primary" data-open-app target="_blank" rel="noopener">
+                            Open OneServe
+                            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7"/><path d="M7 7h10v10"/></svg>
+                        </a>
+                        <p class="install-note">
+                            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 9v4"/><path d="M12 17h.01"/><path d="M10.3 3.86 1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.7 3.86a2 2 0 0 0-3.4 0Z"/></svg>
+                            The administrative system is intended for desktop/laptop use. Installing it (where supported) adds the progressive web app as a shortcut — not a separate native Windows program.
+                        </p>
+                    </div>
+                    <div class="install-visual">
+                        <div class="browser-mock float-2">
+                            <div class="browser-bar">
+                                <span class="d"></span><span class="d"></span><span class="d"></span>
+                                <span class="browser-url">portal.cdmconnect.online<button class="browser-install" aria-label="Install app"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12"/><path d="m7 10 5 5 5-5"/><path d="M3 21h18"/></svg></button></span>
+                            </div>
+                            <div class="browser-body">
+                                <span class="browser-install-toast">
+                                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12"/><path d="m7 10 5 5 5-5"/><path d="M3 21h18"/></svg>
+                                    Install CDM OneServe
+                                    <span class="browser-install-btn">Install</span>
+                                </span>
+                                <div class="browser-content">
+                                    <span class="mock-line w40 tall"></span>
+                                    <span class="mock-line w70 sm"></span>
+                                    <div class="mock-stats small">
+                                        <div class="mock-stat"><span class="mock-line w55 sm"></span><span class="mock-line w30 tall"></span></div>
+                                        <div class="mock-stat"><span class="mock-line w45 sm"></span><span class="mock-line w35 tall"></span></div>
+                                        <div class="mock-stat"><span class="mock-line w60 sm"></span><span class="mock-line w30 tall"></span></div>
+                                    </div>
+                                    <div class="mock-chart">
+                                        <span style="height:45%"></span><span style="height:70%"></span><span style="height:55%"></span><span style="height:90%"></span><span style="height:62%"></span><span style="height:80%"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Troubleshooting -->
+            <div class="troubleshoot">
+                <h3 class="troubleshoot-title">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><path d="M12 17h.01"/></svg>
+                    Installation Troubleshooting
+                </h3>
+                <div class="ts-list">
+                    <details class="ts-item">
+                        <summary>Why is the Install option missing?</summary>
+                        <p>The install option depends on your browser and the app's configuration. Open the official OneServe link in a supported, up-to-date browser and let the page finish loading. On iPhone/iPad use Safari's Share menu; on Android use Chrome's menu. If it still does not appear, contact the CDM OneServe administrator for help.</p>
+                    </details>
+                    <details class="ts-item">
+                        <summary>Why does "Add to Home Screen" not appear?</summary>
+                        <p>On iPhone/iPad the option is inside Safari's Share menu and the label can vary by iOS version. On Android it may be inside Chrome's menu as "Install app" or "Add to Home screen." Make sure you are using a supported browser and the latest iOS or Android version available for your device.</p>
+                    </details>
+                    <details class="ts-item">
+                        <summary>Can I use OneServe without installing it?</summary>
+                        <p>On mobile, OneServe is meant to be used as an installed app — install it to your device to get started. If you cannot install it, follow the steps above or contact the CDM OneServe administrator. (The administrative system is used in a browser on a desktop or laptop.)</p>
+                    </details>
+                    <details class="ts-item">
+                        <summary>Why is the app not opening correctly?</summary>
+                        <p>Try reloading the page, clearing your browser cache, or opening the official link again in a supported, up-to-date browser. Check that you have a stable internet connection.</p>
+                    </details>
+                    <details class="ts-item">
+                        <summary>What should I do if installation fails?</summary>
+                        <p>Restart your browser and try again. If the problem persists, use OneServe directly in the browser and continue to follow its supported workflow. Contact your campus administrator if you still cannot access the platform.</p>
+                    </details>
+                </div>
+                <p class="troubleshoot-foot">
+                    Installability depends on the OneServe application's HTTPS deployment, PWA manifest, service worker, and supported browser configuration. Installation happens from the actual OneServe application URL — this promotional site does not install OneServe.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ===================== DEVICE COMPATIBILITY ===================== -->
+<section id="devices" class="section">
+    <div class="container">
+        <div class="section-header" data-reveal>
+            <span class="eyebrow">Compatibility</span>
+            <h2>Designed for Your Device</h2>
+            <p>Students and faculty use OneServe on mobile (installed as an app). Administrators use it on a desktop or laptop.</p>
+        </div>
+
+        <div class="device-grid">
+            <article class="device-card" data-reveal data-delay="1">
+                <div class="device-illo illo-phone" aria-hidden="true"><span class="screen"></span></div>
+                <span class="device-badge user">For users</span>
+                <h3>Mobile Phone</h3>
+                <p>Install OneServe to your phone from the Installation Guide and open it from your home screen — your main way to use campus services.</p>
+            </article>
+            <article class="device-card" data-reveal data-delay="2">
+                <div class="device-illo illo-tablet" aria-hidden="true"><span class="screen"></span></div>
+                <span class="device-badge user">For users</span>
+                <h3>Tablet</h3>
+                <p>Enjoy a larger screen for browsing resources and forms. Install the app the same way as on a phone.</p>
+            </article>
+            <article class="device-card" data-reveal data-delay="3">
+                <div class="device-illo illo-desktop" aria-hidden="true"><span class="stand"></span><span class="screen"></span></div>
+                <span class="device-badge admin">For admins</span>
+                <h3>Desktop / Laptop</h3>
+                <p>The administrative system is used on a desktop or laptop. Install it as a browser shortcut where supported.</p>
+            </article>
+        </div>
+
+        <div class="device-legend" data-reveal>
+            <div class="legend-item"><span class="legend-dot pwa"></span> <strong>Mobile (installed app)</strong> — how students &amp; faculty use OneServe.</div>
+            <div class="legend-item"><span class="legend-dot admin"></span> <strong>Desktop / laptop</strong> — for the administrative interface.</div>
+        </div>
+    </div>
+</section>
+
+<!-- ===================== USER ROLES & ADMIN ===================== -->
+<section id="roles" class="section section-dark">
+    <div class="container">
+        <div class="section-header on-dark" data-reveal>
+            <span class="eyebrow on-dark">Who uses OneServe</span>
+            <h2>Built for Students, Faculty, and Administrators</h2>
+            <p>Two intended ways to use the platform — each with the right device and account.</p>
+        </div>
+
+        <div class="roles-grid">
+            <article class="role-card" data-reveal data-delay="1">
+                <span class="role-ico">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+                </span>
+                <h3>Students &amp; Faculty</h3>
+                <ul>
+                    <li>Use OneServe on your phone by installing the app (see the Installation Guide).</li>
+                    <li>Use your single OneServe account to sign in.</li>
+                    <li>Explore the campus services available to your account.</li>
+                    <li>Open the app from your home screen whenever you need a service.</li>
+                </ul>
+                <a href="#" class="btn btn-gold btn-sm" data-open-app target="_blank" rel="noopener">Install OneServe</a>
+            </article>
+
+            <article class="role-card" data-reveal data-delay="2">
+                <span class="role-ico">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="14" x="2" y="3" rx="2"/><path d="M8 21h8"/><path d="M12 17v4"/></svg>
+                </span>
+                <h3>Administrators</h3>
+                <ul>
+                    <li>Access the administrative system on a desktop or laptop.</li>
+                    <li>Sign in using an authorized OneServe admin account.</li>
+                    <li>Manage services and supported administrative workflows.</li>
+                    <li>Optionally add it as a browser shortcut where supported.</li>
+                </ul>
+                <span class="btn btn-ghost btn-sm">Desktop / laptop only</span>
+            </article>
+        </div>
+        <p class="roles-note" data-reveal>The administrative interface is intended for desktop use and is not advertised as a mobile admin application.</p>
+    </div>
+</section>
+
+<!-- ===================== FAQ ===================== -->
 <section id="faq" class="section section-light">
-
     <div class="container">
-
-        <div class="section-header">
+        <div class="section-header" data-reveal>
+            <span class="eyebrow">FAQ</span>
             <h2>Frequently Asked Questions</h2>
+            <p>Answers to common questions about CDM OneServe.</p>
         </div>
 
-        <div class="faq-container">
-
+        <div class="faq-container" data-reveal>
             <div class="faq-item">
-
-                <button class="faq-question">
-                    Is the Digital ID secure?
+                <button class="faq-question" aria-expanded="false">
+                    What is CDM OneServe?
+                    <span class="faq-icon" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14"/><path d="M5 12h14"/></svg></span>
                 </button>
-
-                <div class="faq-answer">
-                    <p>
-                        Yes. CDM:OneServe uses
-                        secure authentication and
-                        dynamic QR verification.
-                    </p>
-                </div>
-
+                <div class="faq-answer"><div class="faq-answer-inner"><p>CDM OneServe is the integrated campus service management system of Colegio de Montalban. It brings supported campus services together in one platform so students and faculty can discover and access them more conveniently.</p></div></div>
             </div>
 
             <div class="faq-item">
-
-                <button class="faq-question">
-                    What happens if I lose internet access?
+                <button class="faq-question" aria-expanded="false">
+                    Who can use CDM OneServe?
+                    <span class="faq-icon" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14"/><path d="M5 12h14"/></svg></span>
                 </button>
-
-                <div class="faq-answer">
-                    <p>
-                        Offline verification options
-                        may be implemented depending
-                        on deployment settings.
-                    </p>
-                </div>
-
+                <div class="faq-answer"><div class="faq-answer-inner"><p>Students and faculty use the user-facing OneServe application with their OneServe account. Administrators use the separate administrative system on a desktop or laptop with an authorized admin account.</p></div></div>
             </div>
 
             <div class="faq-item">
-
-                <button class="faq-question">
-                    Does this replace a physical ID?
+                <button class="faq-question" aria-expanded="false">
+                    Is OneServe available on mobile?
+                    <span class="faq-icon" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14"/><path d="M5 12h14"/></svg></span>
                 </button>
-
-                <div class="faq-answer">
-                    <p>
-                        It complements existing
-                        identification systems and
-                        may eventually reduce
-                        dependency on physical cards.
-                    </p>
-                </div>
-
+                <div class="faq-answer"><div class="faq-answer-inner"><p>Yes — OneServe is designed for mobile. Install it to your phone from the Android or iPhone / iPad tabs of the Installation Guide, then open it from your home screen. Administrators use the system on a desktop or laptop.</p></div></div>
             </div>
 
+            <div class="faq-item">
+                <button class="faq-question" aria-expanded="false">
+                    How do I install OneServe on Android?
+                    <span class="faq-icon" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14"/><path d="M5 12h14"/></svg></span>
+                </button>
+                <div class="faq-answer"><div class="faq-answer-inner"><p>Open the official OneServe link in Google Chrome, then tap the "Install app" or "Add to Home screen" prompt — or the same option in Chrome's three-dot menu. Full steps are in the Android tab of the Installation Guide.</p></div></div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question" aria-expanded="false">
+                    How do I add OneServe to my iPhone Home Screen?
+                    <span class="faq-icon" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14"/><path d="M5 12h14"/></svg></span>
+                </button>
+                <div class="faq-answer"><div class="faq-answer-inner"><p>In Safari, open the official OneServe link, tap the Share button, choose "Add to Home Screen," then tap Add. Detailed steps are in the iPhone / iPad tab of the Installation Guide.</p></div></div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question" aria-expanded="false">
+                    Can I install OneServe on a desktop or laptop?
+                    <span class="faq-icon" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14"/><path d="M5 12h14"/></svg></span>
+                </button>
+                <div class="faq-answer"><div class="faq-answer-inner"><p>Students and faculty use OneServe on their phone by installing the app. The administrative interface is used on a desktop or laptop, where an authorized administrator can also add it as a browser shortcut. See the Installation Guide for details.</p></div></div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question" aria-expanded="false">
+                    Do I need to create separate accounts for different services?
+                    <span class="faq-icon" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14"/><path d="M5 12h14"/></svg></span>
+                </button>
+                <div class="faq-answer"><div class="faq-answer-inner"><p>No. You use your single OneServe account. The services available to you depend on your account and its permissions.</p></div></div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question" aria-expanded="false">
+                    Can I use OneServe without installing it?
+                    <span class="faq-icon" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14"/><path d="M5 12h14"/></svg></span>
+                </button>
+                <div class="faq-answer"><div class="faq-answer-inner"><p>On mobile, OneServe is used as an installed app — install it to your device to get started (see the Android or iPhone / iPad tabs). The administrative system is opened in a browser on a desktop or laptop.</p></div></div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question" aria-expanded="false">
+                    What should I do if a service is unavailable?
+                    <span class="faq-icon" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14"/><path d="M5 12h14"/></svg></span>
+                </button>
+                <div class="faq-answer"><div class="faq-answer-inner"><p>Service availability is managed within OneServe and may change over time. If a service is not available to your account, contact the CDM OneServe administrator through your campus channels.</p></div></div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question" aria-expanded="false">
+                    Who should I contact if I encounter a problem?
+                    <span class="faq-icon" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14"/><path d="M5 12h14"/></svg></span>
+                </button>
+                <div class="faq-answer"><div class="faq-answer-inner"><p>For account or access issues, contact the CDM OneServe administrator through your campus channels. Official contact details will be published here when approved.</p></div></div>
+            </div>
         </div>
-
     </div>
-
 </section>
 
-<footer class="footer">
-
-    <div class="container">
-
-        <h3>CDM:OneServe</h3>
-
-        <p>
-            Integrated Campus Service Management
-            Platform for Colegio de Montalban.
-        </p>
-
-        <div class="footer-links">
-            <a href="#">Privacy Policy</a>
-            <a href="#">Terms of Service</a>
-            <a href="#">School Portal</a>
+<!-- ===================== CALL TO ACTION ===================== -->
+<section class="cta">
+    <div class="cta-bg" aria-hidden="true"><span class="cta-ring r1"></span><span class="cta-ring r2"></span></div>
+    <div class="container ca-inner" data-reveal>
+        <h2>Your Campus. Your Services. One Platform.</h2>
+        <p>Start exploring the connected campus experience with CDM OneServe.</p>
+        <div class="cta-buttons">
+            <a href="#" class="btn btn-gold" data-open-app target="_blank" rel="noopener">
+                Open OneServe
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7"/><path d="M7 7h10v10"/></svg>
+            </a>
+            <a href="#install" class="btn btn-outline-light">View Installation Guide</a>
         </div>
-
-        <p>
-            © 2026 CDM:OneServe. All Rights Reserved.
-        </p>
-
     </div>
+</section>
 
+
+</main>
+
+<!-- ===================== FOOTER ===================== -->
+<footer class="footer">
+    <div class="container footer-grid">
+        <div class="footer-brand">
+            <img src="assets/images/cdm-oneserve-logo.png" alt="CDM OneServe logo" width="150" height="56">
+            <p>An integrated campus service management system for <span data-config-text="institution.name">Colegio de Montalban</span>. One Campus. One Platform. Better Campus Services.</p>
+        </div>
+        <div class="footer-col">
+            <h4>Navigation</h4>
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#how-it-works">How It Works</a>
+            <a href="#install">Installation Guide</a>
+            <a href="#faq">FAQ</a>
+        </div>
+        <div class="footer-col">
+            <h4>Campus Services</h4>
+            <a href="#services">Lost &amp; Found</a>
+            <a href="#services">Library</a>
+            <a href="#services">Clinic</a>
+            <a href="#services">Guidance</a>
+            <a href="#services">Marketplace</a>
+        </div>
+        <div class="footer-col">
+            <h4>Get Started</h4>
+            <a href="#" data-open-app target="_blank" rel="noopener">Open OneServe</a>
+            <a href="#install">Install the App</a>
+            <a href="#devices">Device Compatibility</a>
+            <span class="footer-contact" data-config-text="contact.line">&nbsp;</span>
+        </div>
+    </div>
+    <div class="container footer-bottom">
+        <p>&copy; <span data-config-text="copyrightLine">2026</span> CDM OneServe — Colegio de Montalban. All rights reserved.</p>
+        <p class="footer-note">This is the official promotional site. The live application is accessed through OneServe.</p>
+    </div>
 </footer>
 
-<script src="js/script.js"></script>
-<script src="js/id-flip.js"></script>
+<!-- Back to top -->
+<button class="back-to-top" id="backToTop" aria-label="Back to top">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m18 15-6-6-6 6"/></svg>
+</button>
 
+<script src="js/config.js"></script>
+<script src="js/script.js"></script>
 </body>
 </html>
