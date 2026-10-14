@@ -692,9 +692,8 @@ p, h1, h2, h3, h4, li, a, span, summary{ overflow-wrap:break-word; }
     .footer-grid{ grid-template-columns:1fr 1fr; }
     .steps{ grid-template-columns:1fr; gap:1.5rem; }
     .steps-connector{ display:none; }
-}
 
-@media (max-width:768px){
+    /* Hamburger menu from tablet down: the full link row + CTA no longer fit. */
     .nav-links{
         position:fixed; top:var(--nav-h); right:0; left:0;
         flex-direction:column; align-items:stretch; gap:.2rem;
@@ -720,6 +719,14 @@ p, h1, h2, h3, h4, li, a, span, summary{ overflow-wrap:break-word; }
         box-shadow:0 10px 22px -8px rgba(16,106,46,.5);
     }
     .nav-cta-mobile a::after{ display:none; }
+}
+
+@media (max-width:768px){
+    .logo img{ height:50px; }
+    .header.scrolled .logo img{ height:46px; }
+    .about-card-float.a{ left:0; top:-22px; }
+    .about-card-float.b{ right:0; bottom:-24px; }
+    .browser-install-toast{ white-space:normal; text-align:center; max-width:calc(100% - 24px); }
 
     .section{ padding:72px 0; }
     .hero{ padding:calc(var(--nav-h) + 30px) 0 70px; }
@@ -738,6 +745,8 @@ p, h1, h2, h3, h4, li, a, span, summary{ overflow-wrap:break-word; }
 }
 
 @media (max-width:560px){
+    .logo img{ height:46px; }
+    .header.scrolled .logo img{ height:42px; }
     .service-grid{ grid-template-columns:1fr; }
     .footer-grid{ grid-template-columns:1fr; gap:1.8rem; }
     .device-legend{ flex-direction:column; gap:.8rem; align-items:flex-start; }
