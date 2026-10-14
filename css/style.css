@@ -109,11 +109,16 @@ p, h1, h2, h3, h4, li, a, span, summary{ overflow-wrap:break-word; }
 .navbar{ display:flex; align-items:center; justify-content:space-between; height:var(--nav-h); }
 
 .logo{ display:flex; align-items:center; }
-.logo img{ height:50px; width:auto; transition:height .3s var(--ease), filter .3s var(--ease); }
+.logo img{ height:50px; width:auto; transition:height .3s var(--ease), opacity .3s var(--ease); }
 .header.scrolled .logo img{ height:44px; }
 
+/* --- Dual-logo swap: white version over dark hero, green version on white bar --- */
+.logo-dark{ display:none; }
+.logo-light{ display:block; }
+.header.scrolled .logo-dark{ display:block; }
+.header.scrolled .logo-light{ display:none; }
+
 /* --- Header state while floating over the dark photo hero --- */
-.header:not(.scrolled) .logo img{ filter:brightness(0) invert(1); }
 .header:not(.scrolled) .nav-links a{ color:rgba(255,255,255,.9); }
 .header:not(.scrolled) .nav-links a:hover,
 .header:not(.scrolled) .nav-links a.active{ color:#fff; }
@@ -702,7 +707,7 @@ p, h1, h2, h3, h4, li, a, span, summary{ overflow-wrap:break-word; }
     .nav-links a{ padding:12px 8px; font-size:1.02rem; }
     .nav-links a::after{ display:none; }
     /* The dropdown panel is white, so undo the over-hero white link colour
-       (the header bar above it stays dark, so the inverted logo is correct). */
+       (the header bar above it keeps the white logo, which is correct). */
     .header:not(.scrolled) .nav-links a{ color:var(--ink); }
     .header:not(.scrolled) .nav-links a:hover,
     .header:not(.scrolled) .nav-links a.active{ color:var(--primary); }
