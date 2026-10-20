@@ -74,14 +74,6 @@ window.ONESERVE_CONFIG = {
       icon: "heart-handshake",
       url: "https://portal.cdmconnect.online/",
       status: "available"
-    },
-    {
-      id: "marketplace",
-      name: "Marketplace",
-      description: "Discover student businesses and offerings through the campus marketplace.",
-      icon: "store",
-      url: "https://portal.cdmconnect.online/",
-      status: "available"
     }
   ],
 
