@@ -555,7 +555,7 @@ p, h1, h2, h3, h4, li, a, span, summary{ overflow-wrap:break-word; }
 .troubleshoot-foot{ margin-top:2.2rem; padding:1.1rem 1.4rem; background:rgba(244,211,94,.14); border:1px solid rgba(217,169,22,.3); border-radius:12px; color:#6b5410; font-size:.84rem; line-height:1.65; }
 
 /* ============================ DEVICES ============================ */
-.device-grid{ display:grid; grid-template-columns:repeat(3,1fr); gap:2rem; }
+.device-grid{ display:grid; grid-template-columns:repeat(2,1fr); gap:2rem; }
 .device-card{
     background:#fff; border-radius:var(--radius-md); padding:2.2rem 1.8rem; text-align:center;
     border:1px solid var(--line); box-shadow:var(--shadow-sm);
@@ -592,7 +592,7 @@ p, h1, h2, h3, h4, li, a, span, summary{ overflow-wrap:break-word; }
 .legend-dot.admin{ background:#b91c1c; }
 
 /* ============================ ROLES ============================ */
-.roles-grid{ display:grid; grid-template-columns:repeat(2,1fr); gap:2rem; }
+.roles-grid{ display:grid; grid-template-columns:1fr; gap:2rem; max-width:520px; margin:0 auto; }
 .role-card{
     background:var(--light); border:1px solid var(--line);
     border-radius:var(--radius-md); padding:2rem; box-shadow:var(--shadow-sm);
